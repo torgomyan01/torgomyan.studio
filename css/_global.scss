@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 8px;
@@ -7,13 +8,13 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: white;
+  background: #ffff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: rgba(98, 110, 82, 0.4392156863);
+  background: #626e5270;
 }
 
 /* Handle on hover */
@@ -41,11 +42,7 @@ a {
     font-size: 14px;
   }
 }
+
 body {
   background: linear-gradient(235deg, #c444ff 0%, #562999 59.78%);
 }
-
-section .header {
-  background: linear-gradient(235deg, #c444ff 0%, #562999 59.78%);
-}
-/*# sourceMappingURL=style.css.map */
