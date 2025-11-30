@@ -1,0 +1,27 @@
+{
+  "name": "cosmetic-via",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/torgomyan01/cosmetic-via#readme",
+  "bugs": {
+    "url": "https://github.com/torgomyan01/cosmetic-via/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torgomyan01/cosmetic-via.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "prettier": "^2.8.8",
+    "sass": "^1.93.3",
+    "typescript": "^4.9.5"
+  }
+}
