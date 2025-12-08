@@ -1,0 +1,16 @@
+.video-block{
+    margin-bottom: 30px;
+    .main-title{
+        margin-bottom: 15px;
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+          }
+    }
+
+    .video{
+        display: flex;
+        img{
+            width: 100%;
+        }
+    }
+}

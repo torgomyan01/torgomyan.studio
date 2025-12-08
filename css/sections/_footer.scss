@@ -1,0 +1,39 @@
+.footer{
+    padding-bottom: 40px;
+    @media (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+    .container{
+        border-top: 2px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+        .private-link{
+            font-size: 20px;
+            color: white;
+            @media (max-width: 767px) {
+                margin: 20px 0;
+            }
+        }
+        .copyright{
+            font-size: 20px;
+            color: white;
+
+        }
+        .footer-logo{
+            display: flex;
+            @media (max-width: 1024px) {
+               width: 150px;
+               img{
+                width: 100%;
+               }
+            }
+            @media (max-width: 767px) {
+                order: -1;
+            }
+        }
+    }
+}
