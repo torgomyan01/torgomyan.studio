@@ -25,3 +25,13 @@ const slider = new Swiper(".info-slider", {
     document.body.classList.toggle("overflow");
     document.documentElement.classList.toggle("overflow");
 });
+
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  if (window.scrollY > 20) {
+    header.classList.add('fixed');
+  } else {
+    header.classList.remove('fixed');
+  }
+});
+
