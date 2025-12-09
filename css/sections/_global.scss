@@ -47,6 +47,9 @@ a {
 body {
   background: linear-gradient(235deg, #c444ff 0%, #562999 59.78%);
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body, html{
@@ -75,7 +78,7 @@ body, html{
     margin-bottom: 10px;
   }
   @media (max-width: 767px) {
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 

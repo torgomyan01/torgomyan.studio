@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#FFF" />
+    <meta name="msapplication-navbutton-color" content="#FFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFF" />
+
+    <!--  SUPPORT FAVICON ALL TOUCH-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="android-chrome-192x192.png" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <link rel="stylesheet" href="icons/icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="icons/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Torgomyan Studio</title>
+  </head>
+  <body>
+    
+
+    <header class="header">
+      <div class="container">
+        <ul class="main-menu">
+          <li><a href="#" class="menu-link">О Нас</a></li>
+          <li><a href="#" class="menu-link">Услуги</a></li>
+          <li></li>
+          <li><a href="#" class="menu-link">Наши работы</a></li>
+          <li><a href="#" class="menu-link">Связь </a></li>
+        </ul>
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="">
+        </a>
+        <div class="drop-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="request-popup">
+        <button class="popup-close" type="button">
+            <img src="images/popup-close.png" alt="">
+        </button>
+        <h2>Связаться с нами </h2>
+        <form class="request-form">
+            <div class="inputs">
+                <input type="text" placeholder="Ваше имя" name="name">
+                <input type="tel" placeholder="Номер телефона" name="phone">
+            </div>
+            <textarea placeholder="Сообщения"></textarea>
+            <button class="send" type="button">Отправить</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="private-link">Политика конфендициальности</a>
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.svg" alt="">
+        </a>
+        <p class="copyright">All rights reserved 2025</p>
+      </div>
+    </footer>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_KEY&lang=ru_RU"></script>
+
+    <script>
+      ymaps.ready(init);
+  
+      function init() {
+          var mapId = "ВАШ_MAP_ID"; 
+          var myMap = new ymaps.Map("map", {
+              center: [55.76, 37.64], 
+              zoom: 10
+          });
+  
+          ymaps.geoQuery(ymaps.load("https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=" + mapId))
+              .addToMap(myMap);
+      }
+  </script>
+  </body>
+</html>
